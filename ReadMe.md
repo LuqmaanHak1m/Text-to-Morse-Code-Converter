@@ -25,6 +25,18 @@ Ensure you have Python installed on your system. If not, download and install Py
    cd text-to-morse-converter
    ```
 
+2. **Run the script:**
+
+   ```sh
+   python text_to_morse.py
+   ```
+
+3. **Input Text:**
+   When prompted, enter the text you want to convert to Morse code. The script will remove any spaces from the input and convert the remaining characters to Morse code.
+   ```sh
+   Enter text for conversion: hello123
+   ```
+
 # Text to Morse Code Converter Explanation
 
 ## Overview
@@ -53,11 +65,7 @@ This Python script converts a given text input into Morse code and plays the cor
 2. **Conversion**: The entered text is converted into Morse code using `textToMorse`.
 3. **Sound Output**: The converted Morse code is then played as audible beeps using `winsound.Beep()`.
 
-### Example
+### Notes
 
-Here's an example of how to use the script:
-
-1. Run the script:
-   ```sh
-   python text_to_morse.py
-   ```
+- Ensure the input text does not contain any special characters or spaces, as they are not handled by the current implementation.
+- The winsound module is specific to Windows. The script will not work on other operating systems without modification.
